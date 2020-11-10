@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE426F11255AE695006ADB79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F10255AE695006ADB79 /* AppDelegate.swift */; };
-		CE426F13255AE695006ADB79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F12255AE695006ADB79 /* SceneDelegate.swift */; };
 		CE426F15255AE695006ADB79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F14255AE695006ADB79 /* ViewController.swift */; };
 		CE426F18255AE695006ADB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE426F16255AE695006ADB79 /* Main.storyboard */; };
 		CE426F1A255AE698006ADB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE426F19255AE698006ADB79 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		CE426F0D255AE695006ADB79 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE426F10255AE695006ADB79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE426F12255AE695006ADB79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE426F14255AE695006ADB79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE426F17255AE695006ADB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE426F19255AE698006ADB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		CE426F0F255AE695006ADB79 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				CE426F10255AE695006ADB79 /* AppDelegate.swift */,
-				CE426F12255AE695006ADB79 /* SceneDelegate.swift */,
-				CE426F14255AE695006ADB79 /* ViewController.swift */,
-				CE426F16255AE695006ADB79 /* Main.storyboard */,
-				CE426F19255AE698006ADB79 /* Assets.xcassets */,
-				CE426F1B255AE698006ADB79 /* LaunchScreen.storyboard */,
-				CE426F1E255AE698006ADB79 /* Info.plist */,
+				CE426F29255AECCB006ADB79 /* View Controllers */,
+				CE426F2E255AED1B006ADB79 /* Models */,
+				CE426F28255AECBF006ADB79 /* Storyboards */,
+				CE426F2C255AECFF006ADB79 /* Additional Files */,
+				CE426F2B255AECD9006ADB79 /* Resources */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		CE426F28255AECBF006ADB79 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE426F16255AE695006ADB79 /* Main.storyboard */,
+				CE426F1B255AE698006ADB79 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE426F29255AECCB006ADB79 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE426F14255AE695006ADB79 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE426F2B255AECD9006ADB79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE426F19255AE698006ADB79 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE426F2C255AECFF006ADB79 /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE426F10255AE695006ADB79 /* AppDelegate.swift */,
+				CE426F1E255AE698006ADB79 /* Info.plist */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		CE426F2E255AED1B006ADB79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +176,6 @@
 			files = (
 				CE426F15255AE695006ADB79 /* ViewController.swift in Sources */,
 				CE426F11255AE695006ADB79 /* AppDelegate.swift in Sources */,
-				CE426F13255AE695006ADB79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
