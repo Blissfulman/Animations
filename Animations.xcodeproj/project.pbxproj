@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E8773D56066CE5DA57A9D9B /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAF3208AB3717C90E7600B9 /* Pods_Animations.framework */; };
 		CE426F11255AE695006ADB79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F10255AE695006ADB79 /* AppDelegate.swift */; };
-		CE426F15255AE695006ADB79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F14255AE695006ADB79 /* ViewController.swift */; };
+		CE426F15255AE695006ADB79 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE426F14255AE695006ADB79 /* AnimationsViewController.swift */; };
 		CE426F18255AE695006ADB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE426F16255AE695006ADB79 /* Main.storyboard */; };
 		CE426F1A255AE698006ADB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE426F19255AE698006ADB79 /* Assets.xcassets */; };
 		CE426F1D255AE698006ADB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE426F1B255AE698006ADB79 /* LaunchScreen.storyboard */; };
+		CECFD8B6255AFFE4001F3ECB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFD8B5255AFFE4001F3ECB /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		7D9987558092BDCD3112EBE2 /* Pods-Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.debug.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.debug.xcconfig"; sourceTree = "<group>"; };
 		CE426F0D255AE695006ADB79 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE426F10255AE695006ADB79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE426F14255AE695006ADB79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE426F14255AE695006ADB79 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		CE426F17255AE695006ADB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE426F19255AE698006ADB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE426F1C255AE698006ADB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE426F1E255AE698006ADB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECFD8B5255AFFE4001F3ECB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,6 @@
 				7D9987558092BDCD3112EBE2 /* Pods-Animations.debug.xcconfig */,
 				0763A75894C50CCA1758CCA9 /* Pods-Animations.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,7 +101,7 @@
 		CE426F29255AECCB006ADB79 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE426F14255AE695006ADB79 /* ViewController.swift */,
+				CE426F14255AE695006ADB79 /* AnimationsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -125,6 +126,7 @@
 		CE426F2E255AED1B006ADB79 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CECFD8B5255AFFE4001F3ECB /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,7 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE426F15255AE695006ADB79 /* ViewController.swift in Sources */,
+				CE426F15255AE695006ADB79 /* AnimationsViewController.swift in Sources */,
+				CECFD8B6255AFFE4001F3ECB /* Animation.swift in Sources */,
 				CE426F11255AE695006ADB79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6378W446;
-				INFOPLIST_FILE = Animations/Info.plist;
+				INFOPLIST_FILE = "Animations/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +417,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6378W446;
-				INFOPLIST_FILE = Animations/Info.plist;
+				INFOPLIST_FILE = "Animations/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
