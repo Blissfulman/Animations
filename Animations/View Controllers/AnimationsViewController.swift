@@ -14,13 +14,7 @@ class AnimationsViewController: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
     
     // MARK: - Properties
-    var nextAnimation: Animation!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        nextAnimation = Animation.getRandomAnimation()
-    }
+    var nextAnimation = Animation.getRandomAnimation()
     
     // MARK: - Actions
     @IBAction func nextAnimationPressed(_ sender: SpringButton) {
