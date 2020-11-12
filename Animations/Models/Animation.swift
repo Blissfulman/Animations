@@ -24,26 +24,14 @@ struct Animation {
 }
 
 extension Animation {
-    static func getAnimationPresets() -> [String] {
-        return [
-            "slideLeft", "slideRight", "slideDown", "slideUp", "squeezeLeft",
-            "squeezeRight", "squeezeDown", "squeezeUp", "fadeIn", "fadeOut",
-            "fadeOutIn", "fadeInLeft", "fadeInRight", "fadeInDown", "fadeInUp",
-            "zoomIn", "zoomOut", "fall", "shake", "pop", "flipX", "flipY",
-            "morph", "squeeze", "flash", "wobble", "swing"
-        ]
-    }
-    
-    static func getAnimationCurves() -> [String] {
-        return [
-            "easeIn", "easeOut", "easeInOut", "linear", "spring", "easeInSine",
-            "easeOutSine", "easeInOutSine", "easeInQuad", "easeOutQuad",
-            "easeInOutQuad", "easeInCubic", "easeOutCubic", "easeInOutCubic",
-            "easeInQuart", "easeOutQuart", "easeInOutQuart", "easeInQuint",
-            "easeOutQuint", "easeInOutQuint", "easeInExpo", "easeOutExpo",
-            "easeInOutExpo", "easeInCirc", "easeOutCirc", "easeInOutCirc",
-            "easeInBack", "easeOutBack", "easeInOutBack"
-        ]
+    static func getRandomAnimation() -> Animation {
+        Animation(
+            preset: DataManager.shared.presets.randomElement()?.rawValue ?? "",
+            curve: DataManager.shared.curves.randomElement()?.rawValue ?? "",
+            force: Float.random(in: 0.5...2),
+            duration: Float.random(in: 0.5...2),
+            delay: Float.random(in: 0...1)
+        )
     }
 }
 

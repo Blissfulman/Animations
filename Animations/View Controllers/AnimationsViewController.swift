@@ -14,13 +14,12 @@ class AnimationsViewController: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
     
     // MARK: - Properties
-    let animationPresets = Animation.getAnimationPresets()
     var nextAnimation: Animation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nextAnimation = randomAnimation()
+        nextAnimation = Animation.getRandomAnimation()
     }
     
     // MARK: - Actions
@@ -34,22 +33,12 @@ class AnimationsViewController: UIViewController {
         animatingView()
         
         // Generating next animation
-        nextAnimation = randomAnimation()
+        nextAnimation = Animation.getRandomAnimation()
         
         sender.setTitle("Run \(nextAnimation.preset)", for: .normal)
     }
     
     // MARK: - Private methods
-    private func randomAnimation() -> Animation {
-        Animation(
-            preset: Animation.getAnimationPresets().randomElement() ?? "",
-            curve: Animation.getAnimationCurves().randomElement() ?? "",
-            force: Float.random(in: 0.5...2),
-            duration: Float.random(in: 0.5...2),
-            delay: Float.random(in: 0...1)
-        )
-    }
-    
     private func animatingView() {
         springView.animation = nextAnimation.preset
         springView.curve = nextAnimation.curve
